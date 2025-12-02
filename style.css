@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("https://ln.run/6qCER") no-repeat center/cover;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/your-image-id') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text span {
+    color: #ff9800;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 80px 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skills .skill-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill {
+    padding: 12px;
+    background: #222;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Projects */
+.project-card {
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+.contact p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        padding: 20px;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        width: 150px;
+    }
+
+    .menu {
+        display: block;
+    }
+}
