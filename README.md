@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This repository contains the complete source c
 ## 🚀 Live Preview
 
 You can view the live version of my portfolio here:
-
+https://kaushani03.github.io/portfolio/
 
 ---
 
